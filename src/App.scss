@@ -1,0 +1,80 @@
+$primary: #8952ff;
+$secondary: #546681;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+$theme-colors: (
+  "info": #3e74c5,
+  "dark": #203b54,
+  "secondary": #c2bdcc,
+  "primary": #8952ff,
+  "light": #fafbfd,
+  "white": #ffffff,
+);
+
+* {
+  list-style-type: none;
+}
+
+.App {
+  font-family: "Inter", sans-serif;
+  color: #203b54;
+  //background-color: #19181f;
+  background-color: #fafbfd;
+
+  h5 {
+    color: #203b54;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  p {
+    color: $secondary;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+a {
+  color: $primary;
+  font-weight: bold;
+}
+
+a:hover {
+  color: $secondary;
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  box-shadow: 0px 6px 8px -6px #242424;
+}
+
+.txt-box {
+  max-width: calc(100% - 50px);
+}
+
+.client-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.grad {
+  background: linear-gradient(to bottom right, #b276eb, #f5aed4, #e3a8fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 52px;
+}
+
+.card-border {
+  border-radius: 1rem;
+  box-shadow: 0px -10px 0px $primary;
+}
+
+.dots {
+  //background-image: url("Images/dots.svg");
+}
+
+@import "~bootstrap/scss/bootstrap";
