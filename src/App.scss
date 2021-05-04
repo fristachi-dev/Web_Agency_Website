@@ -1,12 +1,15 @@
 $primary: #8952ff;
 $secondary: #546681;
+$info: #aeafb1;
+$dark: #203b54;
+$light: #fafbfd;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 
 $theme-colors: (
-  "info": #3e74c5,
+  "info": #aeafb1,
   "dark": #203b54,
-  "secondary": #c2bdcc,
-  "primary": #8952ff,
+  "secondary": $secondary,
+  "primary": $primary,
   "light": #fafbfd,
   "white": #ffffff,
 );
@@ -21,8 +24,7 @@ $theme-colors: (
   //background-color: #19181f;
   background-color: #fafbfd;
 
-  h5 {
-    color: #203b54;
+  h4 {
     font-size: 18px;
     font-weight: 700;
   }
@@ -47,7 +49,7 @@ a:hover {
   width: 48px;
   height: 48px;
   background-color: white;
-  box-shadow: 0px 6px 8px -6px #242424;
+  box-shadow: 0px 5px 14px -6px #3a3a3a;
 }
 
 .txt-box {
@@ -61,11 +63,26 @@ a:hover {
 }
 
 .grad {
-  background: linear-gradient(to bottom right, #b276eb, #f5aed4, #e3a8fc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // background: linear-gradient(to bottom right, #b276eb, #f5aed4, #e3a8fc);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
   font-weight: 900;
   font-size: 52px;
+}
+
+.tile-p {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: $dark !important;
+}
+
+.headline:after {
+  content: "";
+  margin-top: 10px;
+  display: block;
+  height: 3px;
+  background: $primary;
+  width: 125px;
 }
 
 .card-border {
@@ -73,8 +90,51 @@ a:hover {
   box-shadow: 0px -10px 0px $primary;
 }
 
+.form-border {
+  border: 2px solid $info !important;
+}
+
+.font-14 {
+  font-size: 14px !important;
+}
+
 .dots {
-  //background-image: url("Images/dots.svg");
+  background: url("dots.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.upper {
+  color: $light !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.result {
+  color: $light !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-shadow: 2px 2px 3px #2e2e2e !important;
+}
+
+.result-title {
+  color: $light !important;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  height: 60px !important;
+  text-shadow: 2px 2px 3px #2e2e2e !important;
+}
+
+.fit {
+  width: fit-content !important;
+}
+
+.form-control {
+  padding: 0.5rem 1rem !important;
+  height: calc(1.5rem + 1.5rem + 2px) !important;
 }
 
 @import "~bootstrap/scss/bootstrap";
