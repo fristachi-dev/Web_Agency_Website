@@ -36,6 +36,7 @@ import { CgWebsite } from "react-icons/cg";
 function App() {
   return (
     <div className="App">
+      <a id="home"> </a>
       {/* banner */}
       <Container className="pb-2">
         <Navbar
@@ -53,7 +54,7 @@ function App() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav inline className="ml-auto">
                 <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#contact-us">Contact Us</Nav.Link>
+                <Nav.Link href="#contact">Contact Us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -172,9 +173,19 @@ function App() {
                   fontSize: "22px",
                   lineHeight: "24px",
                 }}
+                className="text-secondary"
+              >
+                We are
+              </span>{" "}
+              <span
+                style={{
+                  fontWeight: "700",
+                  fontSize: "22px",
+                  lineHeight: "24px",
+                }}
                 className="text-primary"
               >
-                We are DEFINITIVE DESIGN.
+                Definitive Design.
               </span>{" "}
               Here to help you Think Like A Challenger: innovating,
               experimenting, and delivering results. With a long history of
@@ -406,6 +417,7 @@ function App() {
       </Container>
 
       {/* about */}
+      <a id="about"> </a>
       <Container>
         <Row className="pt-5"></Row>
 
@@ -440,7 +452,7 @@ function App() {
               to reflect on who we are, how we work, and what we endeavor for.
             </p>
           </Col>
-          <Col xs={12} md={6} className="pt-5">
+          <Col xs={12} md={6} className="pt-5 mt-5">
             <img className="w-100" src="Images/img-3.png" />
           </Col>
         </Row>
@@ -568,9 +580,11 @@ function App() {
             </Card>
           </Col>
         </Row>
+        <a id="contact"> </a>
       </Container>
 
       {/* forum */}
+
       <Container fluid style={{ background: "#e7eff6" }} className="py-4">
         <Container>
           <Row className="py-5 justify-content-md-center">
